@@ -36,7 +36,8 @@
             uid: getOrSetUniqueId(),
             vid: getOrSetUniqueId('vid'),
             agent: navigator.userAgent,
-            language: navigator.language
+            language: navigator.language,
+            url: window.location.href
         })
     }).catch(error => console.error('Error sending visitor info:', error));
 })();
