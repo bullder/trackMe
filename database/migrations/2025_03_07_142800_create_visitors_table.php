@@ -29,6 +29,8 @@ return new class extends Migration
             $table->index('vid');
             $table->index('ip');
             $table->index('at');
+            $table->index('site');
+            $table->index('url');
         });
     }
 
