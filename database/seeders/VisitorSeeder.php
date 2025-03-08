@@ -16,14 +16,15 @@ class VisitorSeeder extends Seeder
             'google.com',
             'facebook.com',
             'twitter.com',
-            'instagram.com'
+            'instagram.com',
+            'garifull.in'
         ];
 
-        for ($i = 0; $i < 500; $i++) {
+        for ($i = 0; $i < 750; $i++) {
             $url = $domains[array_rand($domains)];
             $v['uid'] = self::generateId();
 
-            for ($j = 0; $j < rand(1, 3); $j++) {
+            for ($j = 0; $j < rand(1, 4); $j++) {
                     $v['vid'] = self::generateId();
                     $v['agent'] = $faker->userAgent;
                     $v['language'] = $faker->languageCode;
