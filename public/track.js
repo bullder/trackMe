@@ -27,7 +27,7 @@
         return id;
     }
 
-    fetch('/api/track', {
+    fetch(`${domain}/api/track`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
