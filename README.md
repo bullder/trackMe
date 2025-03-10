@@ -5,16 +5,10 @@ It provides an admin panel for managing tracking scripts and offers integration 
 
 ## Usage
 
-- Access the admin panel at `/admin` (default credentials: `admin@admin.com:password`)
+- Access the admin panel at [/admin](http://track.go.garifull.in/admin) (default credentials: `admin@admin.com:password`)
+- Check deployed service [http://track.go.garifull.in/](http://track.go.garifull.in/)
 - Check the source code on [GitHub](https://github.com/bullder/trackMe)
 - Watch the introductory video on [YouTube](https://youtu.be/-1cqXIUkXZ0)
-
-## Features
-
-- Admin panel for managing tracking scripts
-- Integration with external services
-- User authentication
-- Responsive design
 
 ## Installation
 
@@ -45,7 +39,12 @@ It provides an admin panel for managing tracking scripts and offers integration 
     php artisan migrate
     ```
 
-6. Start the development server:
+6. Add administrator user:
+    ```sh
+    php artisan orchid:admin admin admin@admin.com password
+    ```
+
+7. Start the development server:
     ```sh
     php artisan serve
     ```
